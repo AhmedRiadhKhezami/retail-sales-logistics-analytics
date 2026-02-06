@@ -69,8 +69,6 @@ The project includes:
 
 ## Sample Visual Insights
 
-## Sample Visual Insights
-
 ### Sales Evolution: Consumer vs Corporate
 ![Sales Evolution](images/sales_evolution_consumer_vs_corporate.png)
 
