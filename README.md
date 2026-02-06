@@ -80,12 +80,12 @@ The project includes:
 
 ## Repository Structure
 
-retail-sales-logistics-analytics
+retail-sales-logistics-analytics/
 │
-├── retail_sales_logistics_analytics.ipynb
-├── README.md
-├── data/
-└── images/
+├── retail_sales_logistics_analytics.ipynb # Main PySpark analysis notebook
+├── README.md # Project documentation
+├── data/ # Dataset placeholder
+└── images/ # Generated visualizations
 
 
 ---
