@@ -1,96 +1,97 @@
-Retail Sales & Logistics Analytics with PySpark
+# Retail Sales & Logistics Analytics with PySpark
 
----This project presents an end-to-end retail analytics workflow built with PySpark to analyze transactional sales data from the Superstore dataset.---
+## Project Overview
+This project presents an end-to-end **retail analytics workflow** built with **PySpark** to analyze transactional sales data from the Superstore dataset.
 
 Starting from a single raw CSV file, the analysis constructs multiple analytical DataFrames to evaluate:
--Sales performance over time
--Customer value and loyalty segmentation
--Logistics efficiency and delivery reliability
--Product and category revenue contribution
 
--->The objective is to transform raw transactional data into actionable business insights through scalable data processing and visual analytics.
+- Sales performance over time  
+- Customer value and loyalty segmentation  
+- Logistics efficiency and delivery reliability  
+- Product and category revenue contribution  
 
-+ Data Processing Architecture
-The workflow is structured into six analytical DataFrames derived from a unified master dataset:
+**Objective:** Transform raw transactional data into **actionable business insights** through scalable data processing and visual analytics.
 
-DataFrame	                                                          Business Role
-DF1 – Master View	                                     Data loading, cleaning, and date normalization
-DF2 – Monthly Growth Engine	                           Month-over-month revenue evolution by customer segment
-DF3 – Daily Sales View	                               Weekday vs weekend behavioral sales patterns
-DF4 – Shipping Performance	                           Delivery delay computation and late-delivery detection
-DF5 – Customer Value & Loyalty	                       Customer segmentation using lifetime value, frequency, and diversity
-DF6 – Category Revenue & Pricing	                     Revenue distribution and pricing metrics per product category
+---
 
--->This layered architecture enables modular, scalable business analytics using Spark DataFrames.
+## Data Processing Architecture
 
-+ Key Business Insights Generated
+The workflow is structured into **six analytical DataFrames** derived from a unified master dataset:
 
-Sales & Temporal Behavior : 
--Computed average monthly revenue for Consumer customers
--Compared Consumer vs Corporate sales evolution over time
--Identified higher sales efficiency during weekends vs weekdays
+| DataFrame | Business Role |
+|-----------|---------------|
+| **DF1 – Master View** | Data loading, cleaning, and date normalization |
+| **DF2 – Monthly Growth Engine** | Month-over-month revenue evolution by customer segment |
+| **DF3 – Daily Sales View** | Weekday vs weekend behavioral sales patterns |
+| **DF4 – Shipping Performance** | Delivery delay computation and late-delivery detection |
+| **DF5 – Customer Value & Loyalty** | Customer segmentation using lifetime value, frequency, and diversity |
+| **DF6 – Category Revenue & Pricing** | Revenue distribution and pricing metrics per product category |
 
-Logistics & Reliability : 
--Measured delivery failure rate by city
--Detected cities with highest late-delivery risk, enabling logistics optimization
+This layered architecture enables **modular, scalable business analytics** using Spark DataFrames.
 
-Customer Analytics :
--Segmented customers into Gold, Silver, and Bronze tiers based on lifetime value
--Compared specialist vs generalist high-value customers
--Identified cities with the highest concentration of VIP customers
+---
 
-Product & Revenue Performance : 
--Determined top-selling products in December
--Identified the highest-revenue product category
--Evaluated average ticket size per category
+## Key Business Insights
 
--->These insights demonstrate how data engineering + analytics can support strategic retail decision-making.
+### Sales & Temporal Behavior
+- Computed average monthly revenue for **Consumer** customers  
+- Compared **Consumer vs Corporate** sales evolution over time  
+- Identified higher sales efficiency during **weekends vs weekdays**
 
-+ Visual Analytics
-  
-The project includes multiple business-oriented visualizations:
-- Sales evolution line chart (Consumer vs Corporate)
-- Weekday vs weekend efficiency bar chart
-- Delivery failure rate lollipop chart by city
-- Top December products horizontal bar chart
-- Specialist vs generalist customer value comparison
-- VIP density bubble chart by city
+### Logistics & Reliability
+- Measured **delivery failure rate by city**  
+- Detected cities with the **highest late-delivery risk**
 
---> All visuals are generated after Spark aggregation using Pandas + Matplotlib/Seaborn.
+### Customer Analytics
+- Segmented customers into **Gold, Silver, Bronze** tiers  
+- Compared **specialist vs generalist** high-value customers  
+- Identified cities with the **highest VIP concentration**
 
-Technologies Used :
+### Product & Revenue Performance
+- Determined **top-selling products in December**  
+- Identified the **highest-revenue product category**  
+- Evaluated **average ticket size per category**
 
-Python
-PySpark (Spark DataFrames & SQL functions)
-Pandas
-Matplotlib / Seaborn
-Google Colab
-GitHub
+---
 
-Repository Structure
+## Visual Analytics
+
+The project includes:
+
+- Sales evolution **line chart** (Consumer vs Corporate)  
+- Weekday vs weekend **efficiency bar chart**  
+- Delivery failure rate **lollipop chart by city**  
+- Top December products **horizontal bar chart**  
+- Specialist vs generalist **customer value comparison**  
+- VIP density **bubble chart by city**
+
+---
+
+## Technologies Used
+
+- Python  
+- PySpark (Spark DataFrames & SQL functions)  
+- Pandas  
+- Matplotlib / Seaborn  
+- Google Colab  
+- GitHub  
+
+---
+
+## Repository Structure
+
 retail-sales-logistics-analytics
 │
-├── retail_sales_logistics_analytics.ipynb   # Main PySpark analysis notebook
-├── README.md                                # Project documentation
-├── data/                                    # Dataset placeholder
-└── images/                                  # Generated visualizations
+├── retail_sales_logistics_analytics.ipynb
+├── README.md
+├── data/
+└── images/
 
-Business Value
 
--->This project illustrates the complete pipeline from raw transactional data → scalable processing → KPI generation → decision-ready insights.
+---
 
-It highlights practical skills in:
+## Author
 
-- Big-data analytics with Spark
-
-- Customer segmentation & revenue analysis
-
-- Logistics performance monitoring
-
-- Data visualization for business storytelling
-
-Author
-
-Ahmed Riadh Khezami
-Master’s Student in Business Analytics & Data Science
+**Ahmed Riadh Khezami**  
+Master’s Student — Business Analytics & Data Science  
 Politecnico di Milano
